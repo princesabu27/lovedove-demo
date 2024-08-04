@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --title-font: "Montserrat", sans-serif;
+  --primary-font: "Noto Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e1cfc1;
+  scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Thin scrollbar width */
+}
+
+/* Navigation tab ---------------------------------------------------------*/
+
+.nav-screen {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-color: rgb(16, 16, 16);
+  z-index: 100;
+
+  /* ............................................. */
+  display: none;
+  /* ............................................. */
+}
+
+.close-icon {
+  position: absolute;
+  /* border: 2px solid blueviolet; */
+  right: 20px;
+  top: 20px;
+  max-width: 40px;
+}
+
+.nav-main-container {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  /* border: 2px solid yellowgreen; */
+}
+.nav-logo {
+  /* color: #bd9f87; */
+  color: #ffd350;
+  font-style: italic;
+  font-family: var(--title-font);
+  text-align: center;
+  font-size: 1.5rem;
+  /* border: 2px solid green; */
+  cursor: pointer;
+  touch-action: none;
+  pointer-events: none;
+}
+
+.nav-link-container {
+  /* border: 2px solid blue; */
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  margin-top: 20px;
+}
+
+.nav-link-container > li {
+  margin: 10px 0px 10px 0px;
+  /* border: 2px solid white; */
+}
+
+.nav-link-container a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: larger;
+  font-family: var(--primary-font);
+}
+
+.nav-link-container a:hover {
+  text-decoration: underline;
+  color: antiquewhite;
+}
+
+/* Navigation bar ---------------------------------------------------------*/
+
+.nav-bar {
+  width: 100%;
+  height: 80px;
+  /* border: 2px solid green; */
+  align-content: center;
+  position: fixed;
+  z-index: 50;
+
+  background-color: #decec0ce;
+  background-color: #ffffff53;
+  /* background-color: rgba(250, 235, 215, 0.27); delete later */
+
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.nav-bar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid red; */
+  width: 90%;
+  margin: auto;
+}
+
+.nav-bar-container > a {
+  text-decoration: none;
+}
+
+.nav-bar-logo {
+  font-family: var(--title-font);
+  font-style: italic;
+  font-weight: 800;
+  font-size: larger;
+  color: black;
+  cursor: pointer;
+  /* border: 2px solid yellowgreen; */
+}
+
+.nav-bar-menu-icon {
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+}
+/* Preloader --------------------------------------------------------------*/
+
+pre {
+  display: none;
+}
