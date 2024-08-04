@@ -26,9 +26,9 @@
   position: relative;
   background-position: center;
   background-size: cover;
-/*   background-image: url("/assets/images/photos/hero-image-01.jpg"); */
-  animation: heroBlurAnimation;
-  animation-duration: 30s;
+  background-image: url("/assets/images/photos/hero-image-02.jpg");
+/*   animation: heroBlurAnimation; */
+/*   animation-duration: 30s; */
 
   animation-iteration-count: infinite;
   /* border: 2px solid red; */
